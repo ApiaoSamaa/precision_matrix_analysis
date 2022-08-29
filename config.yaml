@@ -1,0 +1,20 @@
+FILE_PATH:
+ RAW_DATA: "MDA133PredictorTrainAndValidation.xls"
+ LABEL: "MDA133CompleteInfo20070319.xls"
+ PROCESSED_DATA: 
+
+
+PRODUCE_DATA: True
+
+FEATURE:
+ NUM: 110
+ NUM_TTEST: 110
+
+NUM_POS:
+ NUM_FAST:
+ NUM_TEST:
+NUM_NEG:
+ NUM_FAST:
+ NUM_TEST:
+
+
