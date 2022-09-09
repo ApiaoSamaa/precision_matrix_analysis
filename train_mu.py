@@ -4,7 +4,6 @@
 # 根据参考论文中num_pCR(pos sample) == 34, num_CR(neg sample) == 99,挑选数量差异稍大的两组分别作为正负例
 # 此处我选取： LUAD : pos     BRCA : neg 
 # '''
-from re import X
 import numpy as np
 import json
 import pandas as pd
@@ -13,7 +12,7 @@ from sklearn import preprocessing
 import yaml
 
 # config_dict = yaml.load(open("config.yaml","r"), Loader=yaml.FullLoader)
-p_m = loadmat(file_name="fastmdmc_output/dimension100nonzero9984testing_output.mat")['X']
+p_m = loadmat(file_name="./process/output/dimension100nonzero9984testing_output.mat")['X']
 print(f"the shape of precision matrix is {p_m.shape}")
 
 X_pos_fast = np.array(pd.read_csv("../processed_data/normalized_pos_fast_sample.csv"))

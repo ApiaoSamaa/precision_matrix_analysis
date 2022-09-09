@@ -96,7 +96,7 @@ def save_json(file_name, dict):
 
 # %%
 from tqdm import tqdm
-X = raw_X[:,find_p_value()]
+X = raw_X[:,find_p_value(top_num=config_dict["FEATURE"]["NUM_TTEST2"])]
 y = label
 
 cnt = 0
@@ -128,11 +128,17 @@ for train_idx, extra_idx in tqdm(rskf.split(X, y),desc=""):
         train_cov = dict(pos=np.cov(X_train[i_train_p],rowvar=False),neg = np.cov(X_train[~i_train_p],rowvar=False))
         fast_cov = dict(pos=np.cov(X_fast[i_fast_p],rowvar=False),neg = np.cov(X_fast[~i_fast_p],rowvar=False))
 
-        tn_cov_filepath = os.getcwd()+"\\process\\cov_train"+str(cnt)+".json"
-        tn_smpl_filepath = os.getcwd()+"\\process\\sample_train"+str(cnt)+".npy"
-        fst_cov_filepath = os.getcwd()+"\\process\\cov_fast"+str(cnt)+".json"
-        fst_smpl_filepath = os.getcwd()+"\\process\\sample_fast"+str(cnt)+".npy"
-        test_smpl_filepath  = os.getcwd()+"\\process\\sample_test"+str(cnt)+".npy"
+        # tn_cov_filepath = os.getcwd()+"\\process\\cov_train"+str(cnt)+".json"
+        # tn_smpl_filepath = os.getcwd()+"\\process\\sample_train"+str(cnt)+".npy"
+        # fst_cov_filepath = os.getcwd()+"\\process\\cov_fast"+str(cnt)+".json"
+        # fst_smpl_filepath = os.getcwd()+"\\process\\sample_fast"+str(cnt)+".npy"
+        # test_smpl_filepath  = os.getcwd()+"\\process\\sample_test"+str(cnt)+".npy"
+
+        tn_cov_filepath = os.getcwd()+"\\process2\\cov_train"+str(cnt)+".json"
+        tn_smpl_filepath = os.getcwd()+"\\process2\\sample_train"+str(cnt)+".npy"
+        fst_cov_filepath = os.getcwd()+"\\process2\\cov_fast"+str(cnt)+".json"
+        fst_smpl_filepath = os.getcwd()+"\\process2\\sample_fast"+str(cnt)+".npy"
+        test_smpl_filepath  = os.getcwd()+"\\process2\\sample_test"+str(cnt)+".npy"
 
         save_json(tn_cov_filepath,train_cov)
         save_json(fst_cov_filepath,fast_cov)
