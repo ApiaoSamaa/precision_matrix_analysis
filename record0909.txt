@@ -1,0 +1,53 @@
+[1] 2
+[1] 100
+[1] "====================="
+epsilon: 0.3 lambda 0.09 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 0.01 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 9e-04 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 0.002 
+The number of nonzero entries: 0 
+epsilon: 0.3 lambda 0.03 
+The number of nonzero entries: 0 
+[1] "====================="
+epsilon: 0.4 lambda 0.09 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 0.01 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 9e-04 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 0.002 
+The number of nonzero entries: 0 
+epsilon: 0.4 lambda 0.03 
+The number of nonzero entries: 0 
+[1] "====================="
+epsilon: 0.01 lambda 0.09 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 0.01 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 9e-04 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 0.002 
+The number of nonzero entries: 0 
+epsilon: 0.01 lambda 0.03 
+The number of nonzero entries: 0 
+[1] "====================="
+epsilon: 0.015 lambda 0.09 
+The number of nonzero entries: 0 
+epsilon: 0.015 lambda 0.001 
+The number of nonzero entries: 0 
+epsilon: 0.015 lambda 0.01 
